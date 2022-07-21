@@ -19,14 +19,12 @@ void FillArray(int [,] array)
     Random random = new Random();
     int rows = array.GetLength(0);
     int columns = array.GetLength(1);
-    int count = 0;
 
     for(int i = 0; i < rows; i++)
     {
         for(int j = 0; j < columns; j++)
         {
             array [i, j] = random.Next(1, 10);
-            count++;
         }
     }
 }
