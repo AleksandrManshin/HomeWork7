@@ -22,7 +22,7 @@ void FillArray(double [,] array)
     {
         for(int j = 0; j < columns; j++)
         {
-            array [i, j] = random.NextDouble() * 20 - 10;
+            array [i, j] = Math.Round(random.NextDouble() * 20 - 10, 1);
         }
     }
 }
@@ -36,7 +36,7 @@ void PrintArray(double [,] array)
     {
         for(int j = 0; j < columns; j++)
         {
-            Console.Write(Math.Round(array [i, j], 1) + "\t");
+            Console.Write(array [i, j] + "\t");
         }
         Console.WriteLine();
     }
